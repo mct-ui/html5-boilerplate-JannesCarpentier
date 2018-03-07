@@ -66,11 +66,39 @@ p, ol, ul, dl, table, address, figure {
     margin: 0 0 24px;
 }
 
+ul, ol, blockquote {
+    padding-left: 24px;
+}
+
+li ul, li ol {
+    margin-bottom: 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: LightGrey;
+    margin: 0 0 24px;
+}
+
 figcaption {
     font-size: 12px;
     line-height: 16px;
     padding-top: 8px;
     color: grey;
+}
+
+a {
+    color: RoyalBlue;
+    transition: all .1s ease-in-out;
+}
+
+a:visited, a:active {
+    color: BlueViolet;
+}
+
+a:hover, a:focus {
+    color: Crimson;
 }
 
 blockquote {
@@ -86,3 +114,19 @@ blockquote * {
     font-weight: inherit;
     line-height: inherit;
 }
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    html {
+        padding: 48px 48px 24px;
+    }
+    h1 {
+        font-size: 58px;
+        line-height: 64px;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
